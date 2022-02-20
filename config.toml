@@ -1,6 +1,4 @@
 baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'JTB | The Future Haircut'
 theme = "massively"
 googleanalytics = ""
 disqusShortname = ""
@@ -21,11 +19,12 @@ disableKinds = ["taxonomy", "taxonomyTerm", "section"]
 #     showFirstLast = false
  
 [languages]
+[languages.it]
+  languageName = "Italian"
+  title = 'JTB | The Future Haircut'
+  languageCode = 'it'
+
 [languages.en]
   languageName = "English"
-[languages.es]
-  languageName = "Español"
-  title = "Massively - Versión Español"
-#[languages.fr]
-#  languageName = "Français"
-#  title = "Massively - Version Française"
+  title = 'JTB | The Future Haircut'
+  languageCode = 'en-us'

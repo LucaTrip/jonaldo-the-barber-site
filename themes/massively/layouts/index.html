@@ -1,7 +1,7 @@
 {{ partial "htmlhead" . }}
-	<body lang='{{ .Site.Language.Lang | default "en-us" }}' class="is-preload">
+	<body lang='{{ .Site.Language.Lang | default "it" }}' class="is-preload">
 
-		{{ $postsFoldername := .Site.Params.Posts.foldername | default "post" }}
+		<!-- {{ $postsFoldername := .Site.Params.Posts.foldername | default "post" }}
 		{{ $postsPageSize := .Site.Params.Posts.pagesize | default 6 }}
 
 		{{ .Scratch.Set "postsFeaturedPostEnabled" true }}
@@ -23,7 +23,7 @@
 		{{ else }}
 			{{ .Scratch.Set "postsForPaging" $posts }}
 		{{ end }}
-		{{ $postsForPaging := .Scratch.Get "postsForPaging" }}
+		{{ $postsForPaging := .Scratch.Get "postsForPaging" }} -->
 
 		{{ $postsPaging := .Paginate $postsForPaging $postsPageSize }}
 
