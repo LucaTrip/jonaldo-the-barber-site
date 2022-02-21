@@ -1,4 +1,5 @@
-@import url(font-awesome.min.css);
+@import "font-awesome.min.css";
+@import "leaflet.css";
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 /*
 	Massively by HTML5 UP
@@ -2063,6 +2064,17 @@ table.alt tbody tr td {
       #intro button.primary:hover,
       #intro .button.primary:hover {
         background-color: #18bfef; }
+  #intro .main-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; }
+    #intro .main-image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
   #intro h1 {
     font-size: 5rem;
     line-height: 1; }
@@ -2569,6 +2581,11 @@ table.alt tbody tr td {
       background-color: #e2e2e2; }
   #footer .pagination span {
     color: #e2e2e2; }
+  #footer .map-section {
+    padding: 0; }
+  #footer #leaflet-map-container {
+    height: 100%;
+    width: 100%; }
   #footer > section {
     -moz-flex-basis: 50%;
     -webkit-flex-basis: 50%;
@@ -2653,6 +2670,10 @@ table.alt tbody tr td {
   @media screen and (max-width: 980px) {
     #footer {
       display: block; }
+      #footer .map-section {
+        padding: 2rem; }
+      #footer #leaflet-map-container {
+        height: 250px; }
       #footer > section {
         border-top: solid 2px #e2e2e2; }
         #footer > section:first-child {
@@ -2674,6 +2695,10 @@ table.alt tbody tr td {
       #footer p {
         font-size: 0.9rem; } }
   @media screen and (max-width: 736px) {
+    #footer .map-section {
+      padding: 2rem 0; }
+    #footer #leaflet-map-container {
+      height: 250px; }
     #footer > section {
       padding: 2rem 2rem 0.1rem 2rem ; }
       #footer > section.split > section {
@@ -2690,7 +2715,11 @@ table.alt tbody tr td {
           padding: 2rem; } }
   @media screen and (max-width: 480px) {
     #footer {
-      width: 100%; } }
+      width: 100%; }
+      #footer .map-section {
+        padding: 2rem 0; }
+      #footer #leaflet-map-container {
+        height: 250px; } }
 #copyright {
   color: #ffffff;
   position: relative;

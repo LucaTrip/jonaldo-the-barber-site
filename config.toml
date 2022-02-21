@@ -4,9 +4,9 @@ googleanalytics = ""
 disqusShortname = ""
 disableKinds = ["taxonomy", "taxonomyTerm", "section"]
 
-# [params]
+[params]
   # set below parameter to define a favicon
-  # favicon = "favicon.ico"
+  favicon = "images/rounded-logo.svg"
   # set to change date format
   # dateFormat = "2.1.2006"
 
